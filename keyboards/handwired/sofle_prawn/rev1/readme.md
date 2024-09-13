@@ -11,13 +11,19 @@ For details about the keyboard design, refer to Josef's blog: [Sofle Keyboard - 
 * Hardware Supported: Waveshare RP2040
 * Hardware Availability: [Amazon](https://www.amazon.com/gp/product/B0BZ8D7Y42)
 
-Make example for this keyboard (after setting up your build environment):
+Steps to Flash
 
-    make handwired/sofle_prawn/rev1:default
+    Setup QMK Build Environment:
+        https://docs.qmk.fm/newbs_getting_started
 
-Flashing example for this keyboard:
 
-    make handwired/sofle_prawn/rev1:default:flash
+    Build Firmware (after setting up your build environment):
+
+        make handwired/sofle_prawn/rev1:default
+
+    Flashing example for this keyboard:
+
+        make handwired/sofle_prawn/rev1:default:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
