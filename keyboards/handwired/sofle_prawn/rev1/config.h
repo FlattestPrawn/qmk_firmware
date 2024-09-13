@@ -52,3 +52,6 @@
 #define ENCODERS_PAD_B { GP14 }
 #define ENCODER_RESOLUTION 2
 
+//supposedly keeps from having to replug USB cable on every cold boot
+#define SPLIT_WATCHDOG_ENABLE
+
