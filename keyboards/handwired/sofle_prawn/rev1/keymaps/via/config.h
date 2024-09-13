@@ -57,4 +57,7 @@
 //encoder tuning
 //#define ENCODER_MAP_KEY_DELAY 10
 
+//apparently fixes the need to replug usb cable on every cold boot
+#define SPLIT_WATCHDOG_ENABLE
+
 
