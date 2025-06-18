@@ -21,11 +21,13 @@
             {"pin_a":"GP21", "pin_b":"GP23", "resolution": 2}
         ]
     },
-    //"processor": "RP2040", //found in sofle_prawn but maybe not needed anymore? NEED TO DELETE COMMENTS
+    "split": {
+        "enabled": true
+    },
     "url": "",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0x0000",
+        "pid": "0xBAD3",
         "vid": "0xFEED"
     },
     "layouts": {
