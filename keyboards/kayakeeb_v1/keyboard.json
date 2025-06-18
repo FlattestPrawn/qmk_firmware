@@ -18,7 +18,10 @@
     },
     "encoder": {
         "rotary": [
-            {"pin_a":"GP21", "pin_b":"GP23", "resolution": 2}
+            {
+                "pin_a":"GP21",
+                "pin_b":"GP23",
+                "resolution": 2}
         ]
     },
     "split": {
@@ -29,6 +32,27 @@
         "device_version": "1.0.0",
         "pid": "0xBAD3",
         "vid": "0xFEED"
+    },
+    "rgb_matrix": {
+        "enabled": true,
+        "driver": "sk6812`",
+        "led_pin": "GP29",
+        "led_count": 10,
+        "split_count": 5,
+        "animations": {
+            "solid_color": true,
+            "alarming": false,
+            "breathing": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "snake": true,
+            "knight": true,
+            "christmas": true,
+            "gradient_up_down": true,
+            "typing_heatmap": true,
+            "digital_rain": true
+        },
+        "val_limit": 128
     },
     "layouts": {
         "LAYOUT_split": {
