@@ -27,7 +27,7 @@
     "split": {
         "enabled": true
     },
-    "url": "",
+    "url": "https://github.com/FlattestPrawn/qmk_firmware",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0xBAD3",
@@ -35,10 +35,10 @@
     },
     "rgb_matrix": {
         "enabled": true,
-        "driver": "sk6812`",
+        "driver": "ws2812",
         "led_pin": "GP29",
         "led_count": 10,
-        "split_count": 5,
+        "split_count": [5, 5],
         "animations": {
             "solid_color": true,
             "alarming": false,
