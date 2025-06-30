@@ -4,11 +4,8 @@
   "productId": "0xF8DE",
   "lighting": "qmk_rgblight",
   "matrix": {
-    "rows": 5,
-    "cols": 12
-  },
-  "split": {
-    "enabled": true
+    "rows": 10,
+    "cols": 5
   },
   "layouts": {
         "keymap": [
