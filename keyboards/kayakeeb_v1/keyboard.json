@@ -30,8 +30,8 @@
     "url": "https://github.com/FlattestPrawn/qmk_firmware",
     "usb": {
         "device_version": "1.0.0",
-        "pid": "0xBAD3",
-        "vid": "0xFEED"
+        "pid": "0xF8DE",
+        "vid": "0x88AA"
     },
     "rgb_matrix": {
         "enabled": true,
