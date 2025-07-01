@@ -6,14 +6,18 @@
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "features": {
-        //"extrakey": true,
-        //"mousekey": true,
         "console":true,
         "nkro": true
     },
     "matrix_pins": {
         "cols": ["GP7", "GP6", "GP5", "GP4", "GP3", "GP2"],
         "rows": ["GP28", "GP27", "GP26", "GP22", "GP20"]
+    },
+    "url": "https://github.com/FlattestPrawn/qmk_firmware",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0xF8DE",
+        "vid": "0x88AA"
     },
     "encoder": {
         "rotary": [
@@ -45,12 +49,7 @@
             "timeout": 2000
         }
     },
-    "url": "https://github.com/FlattestPrawn/qmk_firmware",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0xF8DE",
-        "vid": "0x88AA"
-    },
+
     "bootmagic": {
         "enabled": true,
         "matrix": [0, 5]

@@ -14,9 +14,9 @@
 VIA_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
-# Enable Debugging
+# Enable Debugging, already present in keyboard.json
 # CONSOLE_ENABLE = yes
 
 ENCODER_ENABLE = yes
-#SPLIT_KEYBOARD = yes
-#SERIAL_DRIVER = vendor
+SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = vendor
