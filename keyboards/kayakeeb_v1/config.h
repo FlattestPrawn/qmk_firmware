@@ -21,10 +21,11 @@
 // 2. Define the number of layers you want to be available in VIA.
 //    This number MUST match the number of layers in your keymap.c file.
 //    Let's assume you have 4 layers: BASE, LOWER, RAISE, ADJUST.
-#define DYNAMIC_KEYMAP_LAYER_COUNT 4
+//#define DYNAMIC_KEYMAP_LAYER_COUNT 4
 
 // 3. (Optional but Recommended) Increase EEPROM size for RP2040
 //    The RP2040 has plenty of flash storage that can be used to simulate EEPROM.
 //    Increasing this gives VIA more space to store settings like custom lighting.
-#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
+//#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
+//#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral

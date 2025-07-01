@@ -3,7 +3,7 @@
 # Set the communication driver to serial
 # Basically whether I am using GPIO pins for serial communication or Serial IO pins.
 # GPIO pins have more flexible usage and is what I used.
-#SPLIT_COM_DRIVER = pio SEEMS WRONG
+SPLIT_COM_DRIVER = pio
 
 # Enable the main Serial Communication feature
 SERIAL_ENABLE = yes
