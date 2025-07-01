@@ -12,3 +12,5 @@ SERIAL_ENABLE = yes
 VIA_ENABLE = yes
 ENCODER_MAP_ENABLE = yes
 
+# Enable Debugging
+CONSOLE_ENABLE = yes

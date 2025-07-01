@@ -9,15 +9,10 @@
         "firmware_format": "uf2",
         "lto": false
     },
-    "features": { //Needs to have all the features I want listed. Removed rgb_matrix for now since it just gives me compile errors
+    "features": {
         "extrakey": true,
         "mousekey": true,
-        //"encoder": true,
-        //"rgblight": true,
-        //"ws2812":true,
-        //"split": true,
         "nkro": true
-        //"console": false, //found in sofle_prawn, need to see what it does NEED TO DELETE COMMENTS
     },
 
     "matrix_pins": {
@@ -36,7 +31,6 @@
         "caps_lock":"GP17"
     },
     "debounce": 5,
-
     "split": {
         "enabled": true,
         "serial": {
