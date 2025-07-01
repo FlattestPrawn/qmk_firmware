@@ -3,7 +3,7 @@
 #pragma once
 
 //Store Handedness in RP2040 EEPROM
-//#define EE_HANDS
+#define EE_HANDS
 
 // --- Serial Communication Pin Configuration (Full-Duplex) ---
 // Define the specific GPIO pins on your RP2040 for communication.
