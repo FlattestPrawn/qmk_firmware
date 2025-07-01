@@ -2,7 +2,7 @@
   "name": "kayakeeb_v1",
   "vendorId": "0x88AA",
   "productId": "0xF8DE",
-  "lighting": "qmk_rgb_matrix",
+  "lighting": "qmk_rgblight",
   "matrix": {
     "rows": 10,
     "cols": 5
