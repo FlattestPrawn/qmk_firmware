@@ -30,3 +30,6 @@
 
 //makes it so the other half can sync the layer state from the master half. If I want LEDs to change colors properly with the layers
 #define SPLIT_LAYER_STATE_ENABLE
+
+#define SPLIT_USB_DETECT
+#define SPLIT_WATCHDOG_ENABLE

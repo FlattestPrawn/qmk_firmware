@@ -12,9 +12,7 @@
         "nkro": true,
         "rgblight": true,
         "ws2812":true,
-        "matrix_pins": true,
-        "split": true,
-        "layout": true
+        "split": true
         //"console": false, //found in sofle_prawn, need to see what it does NEED TO DELETE COMMENTS
     },
 
@@ -44,34 +42,16 @@
         "matrix": [0, 5]
     },
     "rgblight": {
-
+        "pin": "GP29",
+        "driver": "ws2812",
         "led_count": 10,
         "split": true,
         "split_count": [5, 5],
+        "rgbw": true,
         "max_brightness": 128,
         "layers": {
             "enabled": true
         }
-    },
-    "rgb_matrix": {
-        "enabled": true,
-        "driver": "ws2812",
-        "led_count": 10,
-        "split_count": [5, 5],
-        "animations": {
-            "solid_color": true,
-            "alarming": false,
-            "breathing": true,
-            "rainbow_mood": true,
-            "rainbow_swirl": true,
-            "snake": true,
-            "knight": true,
-            "christmas": true,
-            "gradient_up_down": true,
-            "typing_heatmap": true,
-            "digital_rain": true
-        },
-        "max_brightness": 128
     },
     "ws2812": {
         "pin": "GP29",
