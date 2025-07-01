@@ -2,10 +2,14 @@
     "manufacturer": "Vincent Su",
     "keyboard_name": "kayakeeb_v1",
     "maintainer": "FlattestPrawn",
-    "development_board": "promicro_rp2040",
+    "processor": "RP2040",
+    "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
+    "build": {
+        "firmware_format": "uf2",
+        "lto": false
+    },
     "features": { //Needs to have all the features I want listed. Removed rgb_matrix for now since it just gives me compile errors
-        "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
         //"encoder": true,
@@ -21,7 +25,6 @@
         "rows": ["GP28", "GP27", "GP26", "GP22", "GP20"]
     },
     "encoder": {
-        "enabled": true,
         "rotary": [
             {
                 "pin_a":"GP21",
@@ -29,8 +32,28 @@
                 "resolution": 2}
         ]
     },
+    "indicators": {
+        "caps_lock":"GP17"
+    },
+    "debounce": 5,
+
     "split": {
-        "enabled": true
+        "enabled": true,
+        "serial": {
+            "driver": "vendor"
+        },
+        "transport": {
+            "protocol": "serial",
+            "sync": {
+                "layer_state": true
+            },
+            "watchdog": true,
+            "watchdog_timeout": 4000
+        },
+        "usb_detect": {
+            "enabled": true,
+            "polling_interval": 10
+        }
     },
     "url": "https://github.com/FlattestPrawn/qmk_firmware",
     "usb": {
@@ -39,23 +62,31 @@
         "vid": "0x88AA"
     },
     "bootmagic": {
+        "enabled": true,
         "matrix": [0, 5]
     },
+    "eeprom": {
+        "driver": "vendor"
+    },
     "rgblight": {
-        "pin": "GP29",
+        "default": {
+            "animation": "static_light",
+            "on": true,
+            "sat": 128
+        },
         "driver": "ws2812",
         "led_count": 10,
         "split": true,
         "split_count": [5, 5],
-        "rgbw": true,
         "max_brightness": 128,
-        "layers": {
-            "enabled": true
+        "animations": {
+            "breathing":true
         }
     },
     "ws2812": {
         "pin": "GP29",
-        "driver": "vendor"
+        "driver": "vendor",
+        "rgbw": true
     },
     "layouts": {
         "LAYOUT": {

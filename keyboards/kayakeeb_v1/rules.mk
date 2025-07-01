@@ -7,8 +7,6 @@
 
 # Enable the main Serial Communication feature
 SERIAL_ENABLE = yes
-# Enable the hardware serial driver for split communication
-SERIAL_DRIVER = vendor
 
 # enable via remapping
 VIA_ENABLE = yes

@@ -3,7 +3,7 @@
 #pragma once
 
 //Store Handedness in RP2040 EEPROM
-#define EE_HANDS
+//#define EE_HANDS
 
 // --- Serial Communication Pin Configuration (Full-Duplex) ---
 // Define the specific GPIO pins on your RP2040 for communication.
@@ -28,8 +28,3 @@
 //    Increasing this gives VIA more space to store settings like custom lighting.
 #define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
-//makes it so the other half can sync the layer state from the master half. If I want LEDs to change colors properly with the layers
-#define SPLIT_LAYER_STATE_ENABLE
-
-#define SPLIT_USB_DETECT
-#define SPLIT_WATCHDOG_ENABLE
