@@ -16,7 +16,7 @@
 // You can optionally increase the serial communication speed for lower latency.
 // The default is generally sufficient, but for very fast typists or complex features,
 // you might consider increasing it. Default: 250000
-#define SERIAL_PIO_BAUD_RATE 250000
+//#define SERIAL_PIO_BAUD_RATE 250000
 
 // 2. Define the number of layers you want to be available in VIA.
 //    This number MUST match the number of layers in your keymap.c file.
