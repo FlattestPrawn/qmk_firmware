@@ -9,8 +9,8 @@
 // Define the specific GPIO pins on your RP2040 for communication.
 // The TX of one half must be wired to the RX of the other.
 #define SERIAL_USART_FULL_DUPLEX
-#define SERIAL_TX_PIN GP8
-#define SERIAL_RX_PIN GP9
+#define SERIAL_USART_TX_PIN GP8
+#define SERIAL_USART_RX_PIN GP9
 
 // --- Optional: Increase Communication Speed ---
 // You can optionally increase the serial communication speed for lower latency.
@@ -27,3 +27,6 @@
 //    The RP2040 has plenty of flash storage that can be used to simulate EEPROM.
 //    Increasing this gives VIA more space to store settings like custom lighting.
 #define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
+
+//makes it so the other half can sync the layer state from the master half. If I want LEDs to change colors properly with the layers
+#define SPLIT_LAYER_STATE_ENABLE

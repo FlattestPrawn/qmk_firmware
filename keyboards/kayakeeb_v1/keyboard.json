@@ -10,7 +10,11 @@
         "mousekey": true,
         "encoder": true,
         "nkro": true,
-        "rgb_matrix": true
+        "rgblight": true,
+        "ws2812":true,
+        "matrix_pins": true,
+        "split": true,
+        "layout": true
         //"console": false, //found in sofle_prawn, need to see what it does NEED TO DELETE COMMENTS
     },
 
@@ -39,6 +43,16 @@
     "bootmagic": {
         "matrix": [0, 5]
     },
+    "rgblight": {
+
+        "led_count": 10,
+        "split": true,
+        "split_count": [5, 5],
+        "max_brightness": 128,
+        "layers": {
+            "enabled": true
+        }
+    },
     "rgb_matrix": {
         "enabled": true,
         "driver": "ws2812",
@@ -57,22 +71,11 @@
             "typing_heatmap": true,
             "digital_rain": true
         },
-        "layout": [
-            {"matrix": [0, 0], "x": 72, "y": 4, "flags": 4},
-            {"matrix": [0, 1], "x": 58, "y": 2, "flags": 4},
-            {"matrix": [0, 2], "x": 43, "y": 0, "flags": 4},
-            {"matrix": [0, 3], "x": 29, "y": 2, "flags": 4},
-            {"matrix": [0, 4], "x": 14, "y": 5, "flags": 4},
-            {"matrix": [0, 5], "x": 0, "y": 7, "flags": 4},
-            {"matrix": [1, 0], "x": 72, "y": 18, "flags": 4},
-            {"matrix": [1, 1], "x": 58, "y": 16, "flags": 4},
-            {"matrix": [1, 2], "x": 43, "y": 15, "flags": 4},
-            {"matrix": [1, 3], "x": 29, "y": 16, "flags": 4}
-        ],
         "max_brightness": 128
     },
     "ws2812": {
-        "pin": "GP29"
+        "pin": "GP29",
+        "driver": "vendor"
     },
     "layouts": {
         "LAYOUT_split": {

@@ -33,6 +33,33 @@ enum layers {
     };
 #endif
 
+#ifdef RGB_MATRIX_ENABLE
+bool rgb_matrix_indicator_user(void) {
+    // Check if the QWERTY layer (layer 0) is active
+    if (layer_state_is(_QWERTY)) {
+        // Set all LEDs to a static color, e.g., white
+        rgb_matrix_set_color_all(0xFF, 0xFF, 0xFF);
+    }
+    // Check if the COLEMAK layer is active
+    else if (layer_state_is(_COLEMAK)) {
+        // Set all LEDs to a static color, e.g., blue
+        rgb_matrix_set_color_all(0x00, 0x00, 0xFF);
+    }
+    // Check if the LOWER layer is active
+    else if (layer_state_is(_LOWER)) {
+        // Set all LEDs to a static color, e.g., red
+        rgb_matrix_set_color_all(0xFF, 0x00, 0x00);
+    }
+        // Check if the RAISE layer is active
+    else if (layer_state_is(_RAISE)) {
+        // Set all LEDs to a static color, e.g., red
+        rgb_matrix_set_color_all(0xFF, 0x00, 0x00);
+    }
+
+    return false; // Return false to allow the default animations to continue
+}
+#endif // RGB_MATRIX_ENABLE
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
