@@ -4,7 +4,7 @@
     "maintainer": "FlattestPrawn",
     "development_board": "promicro_rp2040",
     "diode_direction": "COL2ROW",
-    "features": {
+    "features": { //Needs to have all the features I want listed. Removed rgb_matrix for now since it just gives me compile errors
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
