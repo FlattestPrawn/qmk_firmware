@@ -8,11 +8,11 @@
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
-        "encoder": true,
-        "nkro": true,
-        "rgblight": true,
-        "ws2812":true,
-        "split": true
+        //"encoder": true,
+        //"rgblight": true,
+        //"ws2812":true,
+        //"split": true,
+        "nkro": true
         //"console": false, //found in sofle_prawn, need to see what it does NEED TO DELETE COMMENTS
     },
 
