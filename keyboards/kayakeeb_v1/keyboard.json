@@ -49,7 +49,7 @@
             "timeout": 2000
         }
     },
-
+/*
     "bootmagic": {
         "enabled": true,
         "matrix": [0, 5]
@@ -83,7 +83,7 @@
         "pin": "GP29",
         "rgbw": true
     },
-
+*/
     "layouts": {
         "LAYOUT": {
             "layout": [
