@@ -8,15 +8,18 @@
         "bootmagic": true,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "encoder": true,
+        "nkro": true,
+        "rgb_matrix": true
         //"console": false, //found in sofle_prawn, need to see what it does NEED TO DELETE COMMENTS
-        //"extrakey": true, //found in sofle_prawn, need to see what it does
     },
+
     "matrix_pins": {
         "cols": ["GP7", "GP6", "GP5", "GP4", "GP3", "GP2"],
         "rows": ["GP28", "GP27", "GP26", "GP22", "GP20"]
     },
     "encoder": {
+        "enabled": true,
         "rotary": [
             {
                 "pin_a":"GP21",
@@ -33,10 +36,12 @@
         "pid": "0xF8DE",
         "vid": "0x88AA"
     },
+    "bootmagic": {
+        "matrix": [0, 5]
+    },
     "rgb_matrix": {
         "enabled": true,
         "driver": "ws2812",
-        "led_pin": "GP29",
         "led_count": 10,
         "split_count": [5, 5],
         "animations": {
@@ -52,7 +57,22 @@
             "typing_heatmap": true,
             "digital_rain": true
         },
-        "val_limit": 128
+        "layout": [
+            {"matrix": [0, 0], "x": 72, "y": 4, "flags": 4},
+            {"matrix": [0, 1], "x": 58, "y": 2, "flags": 4},
+            {"matrix": [0, 2], "x": 43, "y": 0, "flags": 4},
+            {"matrix": [0, 3], "x": 29, "y": 2, "flags": 4},
+            {"matrix": [0, 4], "x": 14, "y": 5, "flags": 4},
+            {"matrix": [0, 5], "x": 0, "y": 7, "flags": 4},
+            {"matrix": [1, 0], "x": 72, "y": 18, "flags": 4},
+            {"matrix": [1, 1], "x": 58, "y": 16, "flags": 4},
+            {"matrix": [1, 2], "x": 43, "y": 15, "flags": 4},
+            {"matrix": [1, 3], "x": 29, "y": 16, "flags": 4}
+        ],
+        "max_brightness": 128
+    },
+    "ws2812": {
+        "pin": "GP29"
     },
     "layouts": {
         "LAYOUT_split": {
