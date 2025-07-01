@@ -6,8 +6,9 @@
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "features": {
-        "extrakey": true,
-        "mousekey": true,
+        //"extrakey": true,
+        //"mousekey": true,
+        "console":true,
         "nkro": true
     },
     "matrix_pins": {
@@ -79,8 +80,8 @@
         }
     },
     "ws2812": {
-        "pin": "GP29",
         "driver": "vendor",
+        "pin": "GP29",
         "rgbw": true
     },
 

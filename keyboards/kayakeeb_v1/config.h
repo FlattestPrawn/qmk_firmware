@@ -30,3 +30,4 @@
 //#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
 //#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral
+#define WS2812_PIO_USE_PIO1 // Forces WS2812 LED driver to use PIO1 instead of PIO0
