@@ -5,10 +5,6 @@
     "processor": "RP2040",
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
-    "build": {
-        "firmware_format": "uf2",
-        "lto": false
-    },
     "features": {
         "extrakey": true,
         "mousekey": true,

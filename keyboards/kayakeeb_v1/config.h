@@ -16,7 +16,7 @@
 // --- Optional: Increase Communication Speed ---
 // You can optionally increase the serial communication speed for lower latency.
 // The default is generally sufficient, but for very fast typists or complex features,
-// you might consider increasing it. Default: 250000
+// you might consider increasing it. Default:
 //#define SERIAL_PIO_BAUD_RATE 250000
 
 // 2. Define the number of layers you want to be available in VIA.
@@ -29,4 +29,4 @@
 //    Increasing this gives VIA more space to store settings like custom lighting.
 //#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
-//#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral
+#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral
