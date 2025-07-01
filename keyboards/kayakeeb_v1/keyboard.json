@@ -68,6 +68,7 @@
     "eeprom": {
         "driver": "vendor"
     },
+
     "rgblight": {
         "default": {
             "animation": "static_light",
@@ -88,6 +89,7 @@
         "driver": "vendor",
         "rgbw": true
     },
+
     "layouts": {
         "LAYOUT": {
             "layout": [
