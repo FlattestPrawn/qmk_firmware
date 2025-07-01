@@ -10,8 +10,8 @@
 // Define the specific GPIO pins on your RP2040 for communication.
 // The TX of one half must be wired to the RX of the other.
 #define SERIAL_USART_FULL_DUPLEX
-#define SERIAL_USART_TX_PIN GP9
-#define SERIAL_USART_RX_PIN GP8
+#define SERIAL_USART_TX_PIN GP8
+#define SERIAL_USART_RX_PIN GP9
 
 // --- Optional: Increase Communication Speed ---
 // You can optionally increase the serial communication speed for lower latency.
@@ -29,4 +29,4 @@
 //    Increasing this gives VIA more space to store settings like custom lighting.
 //#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
-#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral
+//#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral

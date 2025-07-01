@@ -10,7 +10,6 @@
         "mousekey": true,
         "nkro": true
     },
-
     "matrix_pins": {
         "cols": ["GP7", "GP6", "GP5", "GP4", "GP3", "GP2"],
         "rows": ["GP28", "GP27", "GP26", "GP22", "GP20"]
@@ -33,7 +32,6 @@
             "driver": "vendor"
         },
         "transport": {
-            "protocol": "serial",
             "sync": {
                 "layer_state": true
             },
@@ -42,7 +40,8 @@
         },
         "usb_detect": {
             "enabled": true,
-            "polling_interval": 10
+            "polling_interval": 10,
+            "timeout": 2000
         }
     },
     "url": "https://github.com/FlattestPrawn/qmk_firmware",
@@ -56,7 +55,12 @@
         "matrix": [0, 5]
     },
     "eeprom": {
-        "driver": "vendor"
+        "driver": "wear_leveling",
+        "wear_leveling": {
+            "driver": "rp2040_flash",
+            "logical_size": 16384,
+            "backing_size": 32768
+        }
     },
 
     "rgblight": {
