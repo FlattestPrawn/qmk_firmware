@@ -1,12 +1,12 @@
 {
     "manufacturer": "Vincent Su",
-    "keyboard_name": "kayakeeb_v1",
+    "keyboard_name": "kayakeeb",
     "maintainer": "FlattestPrawn",
     "processor": "RP2040",
     "bootloader": "rp2040",
     "diode_direction": "COL2ROW",
     "features": {
-        "console":true,
+        "console":false,
         "nkro": true
     },
     "matrix_pins": {
@@ -49,7 +49,6 @@
             "timeout": 2000
         }
     },
-/*
     "bootmagic": {
         "enabled": true,
         "matrix": [0, 5]
@@ -62,7 +61,6 @@
             "backing_size": 32768
         }
     },
-
     "rgblight": {
         "default": {
             "animation": "static_light",
@@ -83,7 +81,6 @@
         "pin": "GP29",
         "rgbw": true
     },
-*/
     "layouts": {
         "LAYOUT": {
             "layout": [

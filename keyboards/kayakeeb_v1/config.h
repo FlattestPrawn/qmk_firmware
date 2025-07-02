@@ -4,7 +4,7 @@
 #define EE_HANDS
 
 //debug messges
-#define SERIAL_DEBUG
+//#define SERIAL_DEBUG
 
 // --- Serial Communication Pin Configuration (Full-Duplex) ---
 // Define the specific GPIO pins on your RP2040 for communication.
@@ -30,4 +30,4 @@
 //#define DYNAMIC_KEYMAP_EEPROM_MAX_ADDR 4095
 
 //#define SERIAL_PIO_USE_PIO1 // Force the usage of PIO1 peripheral, by default the Serial implementation uses the PIO0 peripheral
-#define WS2812_PIO_USE_PIO1 // Forces WS2812 LED driver to use PIO1 instead of PIO0
+//#define WS2812_PIO_USE_PIO1 // Forces WS2812 LED driver to use PIO1 instead of PIO0
