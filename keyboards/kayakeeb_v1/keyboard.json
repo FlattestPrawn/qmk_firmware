@@ -24,7 +24,7 @@
             {
                 "pin_a":"GP21",
                 "pin_b":"GP23",
-                "resolution": 4}
+                "resolution": 3}
         ]
     },
     "indicators": {
